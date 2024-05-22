@@ -1,6 +1,11 @@
-import discord, datetime
-from discord import app_commands
-from config import Config
+import os
+
+try:
+    import discord, datetime
+    from discord import app_commands
+    from config import Config
+except:
+    os.system("pip install -r importModules.txt")
 
 
 class PlugS_Bot(discord.Client):
